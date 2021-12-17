@@ -15,8 +15,14 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return inertia::render('Home', [
-        'name' => 'Shinde',
-        'framework' => ['laravel', "vue", "inertia"]
-    ]);
+    return inertia::render('Home');
+});
+
+Route::get('/users', function () {
+    sleep(2);
+    return inertia::render('Users');
+});
+
+Route::get('/settings', function () {
+    return inertia::render('Settings');
 });

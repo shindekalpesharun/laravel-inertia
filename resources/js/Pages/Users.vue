@@ -1,5 +1,5 @@
 <template>
-    <h1>Hello</h1>
+    <h1>Users</h1>
     <Nav />
 </template>
 
