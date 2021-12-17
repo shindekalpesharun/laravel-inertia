@@ -8,8 +8,10 @@
     <script src="{{ mix('/js/app.js') }}" defer></script>
 </head>
 
-<body>
+<body class="p-8">
     @inertia
 </body>
+
+<script src="https://cdn.tailwindcss.com"></script>
 
 </html>
