@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/users', function () {
     sleep(2);
-    return inertia::render('Users');
+    return inertia::render('Users', ['time' => now()->toTimeString()]);
 });
 
 Route::get('/settings', function () {
