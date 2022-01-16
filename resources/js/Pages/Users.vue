@@ -1,12 +1,11 @@
 <template>
     <Head title="User" />
-    <h1>Users</h1>
-    <div style="margin-top: 400px">
-        <p>The Current time is {{ time }}</p>
-        <Link href="/users" class="text-blue-500" preserve-scroll>Refresh</Link>
-    </div>
+    <h1 class="text-3xl">Users</h1>
+    <ul>
+        <li v-for="user in users" :key="user.id" v-text="user.name"></li>
+    </ul>
 </template>
 
 <script setup>
-defineProps({ time: String });
+defineProps({ users: Array });
 </script>
